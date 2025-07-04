@@ -106,11 +106,6 @@ button:active {
   margin-top: 10px;
 }
 
-.contato {
-  display: flex;
-  flex-direction: column;
-}
-
 /* Design responsivo */
 @media screen and (max-width: 600px) {
   nav ul {
