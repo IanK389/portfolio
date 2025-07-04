@@ -1,0 +1,48 @@
+<!-- Este é o arquivo projetos.html do portfólio, que contém os projetos do site. -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Veja meus projetos desenvolvidos com HTML, CSS e JavaScript." />
+  <title>Projetos | Meu Portfólio</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+  <!-- Cabeçalho com navegação -->
+  <header>
+      <!-- Navegação do site -->
+    <nav>
+      <!-- Lista de links de navegação -->
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html" class="ativo">Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <button id="modoEscuroBtn">🌙 modo escuro</button>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <!-- Título e galeria da seção de projetos -->
+    <h1>Meus Projetos</h1>
+    <div class="galeria">
+      <div class="projeto" onclick="mostrarDetalhes(this)">
+        <img src="imagens/exemplo img projeto.png" alt="Projeto 1" />
+        <p>Projeto 1</p>
+        <div class="detalhes">Descrição breve do projeto 1.</div>
+      </div>
+      <div class="projeto" onclick="mostrarDetalhes(this)">
+        <img src="imagens/exemplo img projeto.png" alt="Projeto 2" />
+        <p>Projeto 2</p>
+        <div class="detalhes">Descrição breve do projeto 2.</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- JavaScript linkado ao html -->
+  <script src="JS/script.js"></script>
+</body>
+</html>
