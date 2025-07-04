@@ -1,0 +1,114 @@
+/* Reset básico para remover margens e preenchimentos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #c9c8c8;
+  color: #333;
+  padding: 20px;
+  transition: background-color, 0.3s ease;
+}
+
+/* Estilo do cabeçalho */
+nav ul {
+  display: flex;
+  list-style: none;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  margin: 0 0 20px 0;
+}
+
+/* Estilo dos itens do menu de navegação */
+nav ul li {
+  margin-right: 15px;
+}
+
+/* Estilo dos links do menu de navegação */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px
+}
+
+/* Efeito de hover e estilo ativo no menu de navegação */
+nav ul li a.ativo,
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Estilo do título principal */
+body.modo-escuro {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+/* Estilo do menu de navegação no modo escuro */
+body.modo-escuro nav ul {
+  background-color: #000;
+}
+
+/* Estilo do botão de alternância */
+button {
+  background-color: #414040;
+  color: white;
+  border: none;
+  padding: 5px 7px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Efeito de hover no botão */
+button:hover {
+  background-color: #464646;
+}
+
+/* Efeito de clique no botão */
+button:active {
+  background-color: #555555;
+}
+
+/* Estilo do formulário */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Estilo das imagens da galeria */
+.galeria img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Efeito de hover nas imagens da galeria */
+.galeria img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Estilo do modal */
+.detalhes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+/* Design responsivo */
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
